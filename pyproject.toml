@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "datacare-fhirplace"
+version = "0.1.0"
+description = ""
+authors = ["Daniel Kapitan <daniel@kapitan.net>"]
+readme = "README.md"
+packages = [{include = "datacare_fhirplace"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+duckdb = "^0.7.1"
+altair = "^4.2.2"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.11.0"
+black = "^23.1.0"
+ipykernel = "^6.21.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
